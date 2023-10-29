@@ -64,9 +64,7 @@ body{
   color: white;
 }
 
-h1 {
-  font-size: 36px;
-}
+
 
 .conteiner{
   text-align: center;
@@ -126,4 +124,19 @@ h1 {
 
 .creature-card p {
   font-size: 18px;
+}
+
+p{
+    color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    color: aliceblue;
+    margin-top: 8%;
+    font-family: "Jost", sans-serif;
+    font-size: 36px;
 }
