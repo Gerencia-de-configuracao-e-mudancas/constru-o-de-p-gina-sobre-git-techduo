@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav>
         <ul>
             <li><a href="">Início</a></li>
             <li><a href="">História</a></li>
-            <li><a href="">Filmes</a></li>
+            <li><a href="#filmes">Filmes</a></li>
             <li><a href="">Monstros</a></li>
             <li><a href="">Fantasias</a></li>
         </ul>
     </nav>
     <img src="img/teste8.png" width="100%" height="100%">
 
+    <div class="conteiner">
+        <div class="page-subtitle">
+            <h2>Filmes de Terror</h2>
+        </div>
+    </div>
+    <div id="filmes"></div>
     <script>
         const nav = document.querySelector('nav');
 
@@ -38,6 +46,30 @@
                 link.classList.remove('hover');
             });
         });
+
+        let imgFilmes = ["https://br.web.img2.acsta.net/c_310_420/pictures/18/06/14/13/11/1751062.jpg", "https://br.web.img2.acsta.net/pictures/23/10/05/21/13/1431520.jpg", "https://br.web.img3.acsta.net/pictures/16/09/05/15/42/354197.jpg", "https://br.web.img3.acsta.net/pictures/15/03/10/16/48/336112.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/87/79/16/19961587.jpg", "https://br.web.img3.acsta.net/pictures/14/10/10/19/21/152595.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/91/33/59/20140728.jpg", "https://br.web.img3.acsta.net/pictures/21/06/28/15/53/0645594.jpg", "https://br.web.img2.acsta.net/pictures/23/01/19/16/50/3168009.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/89/39/58/20321715.jpg", "https://br.web.img3.acsta.net/pictures/19/02/07/14/16/5034340.jpg", "https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg", "https://br.web.img3.acsta.net/medias/nmedia/18/90/48/68/20099172.jpg"];
+        let nomesFilmes = ["Hereditário", "O Exorcista", "A bruxa de Blair", "A Hora do Pesadelo", "Coraline e o Mundo Secreto", "O Iluminado", "A Noiva Cadáver", "Fear Street", "Pânico", "Frankenweenie", "Nós", "It- A Coisa", "O Estranho Mundo de Jack"];
+
+        let filmesContainer = document.getElementById("filmes");
+
+        for (let i = 0; i < imgFilmes.length; i++) {
+            let div = document.createElement("div");
+            div.classList.add("itens");
+
+            let img = document.createElement("img");
+            img.classList.add("poster");
+            img.src = imgFilmes[i];
+
+            let h2 = document.createElement("h2");
+            h2.classList.add("nomes");
+            h2.innerText = nomesFilmes[i];
+
+            div.appendChild(img);
+            div.appendChild(h2);
+
+            filmesContainer.appendChild(div);
+        }
     </script>
 </body>
+
 </html>
