@@ -60,8 +60,12 @@ img {
 
 body{
   text-align: center;
-  background-color: #0E1013;
+  background-color: #000;
   color: white;
+}
+
+h1 {
+  font-size: 36px;
 }
 
 .conteiner{
@@ -93,4 +97,33 @@ body{
   border: solid #000000;
   width: 200px;
   height: 300px;
+}
+
+.creature-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.creature-card {
+  background-color: #333;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.creature-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.creature-card h2 {
+  font-size: 24px;
+}
+
+.creature-card p {
+  font-size: 18px;
 }
