@@ -83,12 +83,13 @@ body{
 .itens{
   display: inline-block;
   margin: 15px 30px;
+  margin-top: 40px;
 }
-
+/* 
 .itens:hover{
   transform: scale(1.1);
   transition-duration: 0.5s;
-}
+} */
 
 .poster{
   border-radius: 8px;
@@ -128,8 +129,8 @@ color: white;
 
 p{
     color: aliceblue;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-family: "Jost", sans-serif;
     font-size: 18px;
 }
@@ -156,4 +157,3 @@ footer {
   footer a:hover {
     text-decoration: underline;
   }
-  

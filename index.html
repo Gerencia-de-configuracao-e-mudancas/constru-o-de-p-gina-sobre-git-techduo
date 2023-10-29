@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Git</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <ul>
             <li><a href="">Início</a></li>
             <li><a href="#explicando">Explicando</a></li>
-            <li><a href="#filmes">Filmes</a></li>
+            <li><a href="#filmes">Conceitos</a></li>
             <li><a href="#comandos">Comandos</a></li>
         </ul>
     </nav>
@@ -23,16 +23,16 @@
     
     <div class="conteiner">
         <div class="page-subtitle">
-            <h1>Filmes de Terror</h1>
+            <h1>Conceitos importantes</h1>
         </div>
     </div>
     <div id="filmes"></div><br><br>
     
-    <header>
+    <header id="comandos">
         <h1>Git Commands</h1>
     </header>
 
-    <div class="container">
+    <div class="container" >
         <div class="card">
             <h2 class="command-name">git init</h2>
             <p class="command-description">Inicializa um repositório Git e diretório local, criando uma estrutura Git vazia para rastrear e versionar arquivos.</p>
@@ -99,8 +99,13 @@
             });
         });
 
-        let imgFilmes = ["https://br.web.img2.acsta.net/c_310_420/pictures/18/06/14/13/11/1751062.jpg", "https://br.web.img2.acsta.net/pictures/23/10/05/21/13/1431520.jpg", "https://br.web.img3.acsta.net/pictures/16/09/05/15/42/354197.jpg", "https://br.web.img3.acsta.net/pictures/15/03/10/16/48/336112.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/87/79/16/19961587.jpg", "https://br.web.img3.acsta.net/pictures/14/10/10/19/21/152595.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/91/33/59/20140728.jpg", "https://br.web.img3.acsta.net/pictures/21/06/28/15/53/0645594.jpg", "https://br.web.img2.acsta.net/pictures/23/01/19/16/50/3168009.jpg", "https://br.web.img2.acsta.net/medias/nmedia/18/89/39/58/20321715.jpg", "https://br.web.img3.acsta.net/pictures/19/02/07/14/16/5034340.jpg", "https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg", "https://br.web.img3.acsta.net/medias/nmedia/18/90/48/68/20099172.jpg"];
-        let nomesFilmes = ["Hereditário", "O Exorcista", "A bruxa de Blair", "A Hora do Pesadelo", "Coraline e o Mundo Secreto", "O Iluminado", "A Noiva Cadáver", "Fear Street", "Pânico", "Frankenweenie", "Nós", "It- A Coisa", "O Estranho Mundo de Jack"];
+        let imgFilmes = ["https://www.cloudmotion.com.br/blog/2019/04/02/Tipos-de-Sistemas-de-Controle-de-Versao/descentralizado.png", "https://blog.pronus.io/images/controle_versao/conceitos_basicos/repositorio_desenvolvedor.png", "https://as2.ftcdn.net/v2/jpg/05/45/57/73/1000_F_545577317_MZoby2KUVnJ5Gwkgs3MX0WAFP8YiKpjD.jpg", "https://i.pinimg.com/originals/48/c6/1f/48c61f19bf4c11a128533fd44d803809.jpg", "https://happygitwithr.com/img/fork-them-pull-request.jpeg"];
+        let nomesFilmes = ["Controle de Versão", "Sistema distribuído", "Repositórios", "GitHub", "Forks e Pull Requests:"];
+        let Descricao = ["O Git é uma ferramenta de controle de versão que permite que você rastreie todas as alterações feitas em um projeto ao longo do tempo. Ele mantém um histórico completo das versões anteriores do código, o que facilita a recuperação de versões anteriores e a compreensão das mudanças feitas por você e outros colaboradores.",
+    "O Git é um sistema de controle de versão distribuído, o que significa que cada usuário de um projeto Git possui uma cópia completa do repositório, incluindo todo o histórico. Isso permite que os desenvolvedores trabalhem de forma descentralizada e colaborem efetivamente em projetos, mesmo em locais diferentes.",
+"Um repositório Git é um local onde você armazena seu código e todo o histórico de versões. Existem repositórios locais (em sua máquina) e repositórios remotos (em servidores), que facilitam a colaboração com outros desenvolvedores.",
+"Os repositórios remotos são versões do seu projeto armazenadas em servidores ou locais acessíveis por outros colaboradores. Plataformas como GitHub, GitLab e Bitbucket são amplamente utilizadas para hospedar repositórios remotos e facilitar a colaboração em equipe.",
+"Em ambientes colaborativos, os desenvolvedores frequentemente fazem forks (cópias) de repositórios remotos e propõem mudanças por meio de pull requests. Isso permite que outros revisem e discutam as alterações antes de mesclá-las no repositório original."]
 
         let filmesContainer = document.getElementById("filmes");
 
@@ -116,8 +121,13 @@
             h2.classList.add("nomes");
             h2.innerText = nomesFilmes[i];
 
+            let p = document.createElement("p");
+            p.classList.add("descritivo");
+            p.innerText = Descricao[i];
+
             div.appendChild(img);
             div.appendChild(h2);
+            div.appendChild(p);
 
             filmesContainer.appendChild(div);
         }
