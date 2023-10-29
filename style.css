@@ -84,11 +84,6 @@ body{
   margin: 15px 30px;
   margin-top: 40px;
 }
-/* 
-.itens:hover{
-  transform: scale(1.1);
-  transition-duration: 0.5s;
-} */
 
 .poster{
   border-radius: 8px;
@@ -141,10 +136,11 @@ h1 {
     font-size: 36px;
 }
 
-.conteiner-text {
+.conteiner-text a{
   color: white;
   margin: 30px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 footer {
