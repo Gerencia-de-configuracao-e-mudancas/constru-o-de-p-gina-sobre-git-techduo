@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Git</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="#explicando">Explicando</a></li>
+            <li><a href="#filmes">Conceitos</a></li>
+            <li><a href="#comandos">Comandos</a></li>
+        </ul>
+    </nav>
+    <img src="img/teste9.png" width="100%" height="100%">
+    <h1 id="explicando">O que é?</h1>
+    <p>O Git é um sistema de controle de versão distribuído amplamente utilizado para o gerenciamento de código-fonte e rastreamento de alterações em projetos de desenvolvimento de software. Ele foi criado por Linus Torvalds em 2005 e é uma ferramenta fundamental para desenvolvedores de software, pois ajuda a controlar e colaborar no desenvolvimento de projetos de software de maneira eficiente. Abaixo, estão alguns conceitos importantes relacionados ao Git:</p>
+    
+    <div class="conteiner">
+        <div class="page-subtitle">
+            <h1>Conceitos importantes</h1>
+        </div>
+    </div>
+    <div id="filmes"></div><br><br>
+    <header>
+		<h1>Por que usar o Git?</h1>
+	</header>
+	<div class="topicos">
+		<div class="conteiner-text">
+			<h3>Fluxo de trabalho de ramificação de função</h3>
+			<p>Uma das maiores vantagens do Git são seus funções de branch essas funções facilitam o fluxo de trabalho da
+				ramificação de funções popular entre muitos usuários do Git. Os branches de características oferecem um ambiente
+				isolado para cada alteração na base de código.</p>
+		</div>
+		<div class="conteiner-text">
+			<h3>Desenvolvimento distribuído</h3>
+			<p>O Git é um sistema de controle de versão distribuído. Em vez de uma cópia de trabalho, cada desenvolvedor obtém
+				seu próprio repositório local, com um histórico completo de commits. Semelhante aos branches de característica,
+				o desenvolvimento distribuído cria um ambiente mais confiável.</p>
+		</div>
+		<div class="conteiner-text">
+			<h3>Solicitações pull</h3>
+			<p>A pull request é uma forma de pedir a outro desenvolvedor para fazer o merge de um dos seus branches no
+				repositório dele. Além de facilitar o acompanhamento das alterações para os líderes de projeto, esse recurso
+				também possibilita que os desenvolvedores dialoguem antes de integrar o trabalho à base de código.</p>
+		</div>
+	</div>
+    <header id="comandos">
+        <h1>Git Commands</h1>
+    </header>
+
+    <div class="container" >
+        <div class="card">
+            <h2 class="command-name">git init</h2>
+            <p class="command-description">Inicializa um repositório Git e diretório local, criando uma estrutura Git vazia para rastrear e versionar arquivos.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git clone</h2>
+            <p class="command-description">Cria uma cópia de um repositório Git existente. A clonagem é a forma mais comum de os desenvolvedores obterem uma cópia de trabalho de um repositório central.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git add</h2>
+            <p class="command-description">Move as alterações do diretório de trabalho para a área de teste. Isso lhe dá a oportunidade de preparar um instantâneo antes de enviá-lo para a história oficial.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git commit</h2>
+            <p class="command-description">Registra as alterações e confirma no histórico do projeto. Combinado com git add, isso define o fluxo de trabalho básico para todos os usuários do Git.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git pull</h2>
+            <p class="command-description">Ele baixa um branch de um repositório remoto e imediatamente o mescla no branch atual.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git push</h2>
+            <p class="command-description">Ele permite mover uma ramificação local para outro repositório, o que serve como uma maneira conveniente de publicar contribuições.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git branch</h2>
+            <p class="command-description">Ele permite criar ambientes de desenvolvimento isolados em um único repositório. Também pode ser usado para listar, criar e excluir branches.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="command-name">git merge</h2>
+            <p class="command-description">Serve para integrar mudanças de uma branch em outra.</p>
+        </div>
+    </div>
+    <header>
+		<h1>Fluxo de Trabalho com Git</h1>
+	</header>
+	<div class="topicos">
+		<div class="conteiner-text">
+			<h2>Iniciar um Projeto</h2>
+			<p>Use 'git init' para criar um repósitorio no diretório local ou use 'git clone' para clonar um repositório
+				existente</p>
+		</div>
+		<div class="conteiner-text">
+			<h2>Fazer mudanças</h2>
+			<p>Edite e crie arquivos e use o 'git add' para prepará-los para commit</p>
+		</div>
+		<div class="conteiner-text">
+			<h2>Commit das mudanças</h2>
+			<p>Use 'git commit' para criar um registro das mudanças</p>
+		</div>
+		<div class="conteiner-text">
+			<h2>Trabalho em equipe</h2>
+			<p>Use branches para trabalhar em paralelo com outros colegas e o 'git merge' para unir as alterações</p>
+		</div>
+		<div class="conteiner-text">
+			<h2>Atualização e Envio</h2>
+			<p>Use 'git pull' para obter as mudanças remotas e 'git push' para mandar suas alterações para o repósitorio renoto</p>
+		</div>
+	</div>
+    <header>
+		<h1>Recursos Adicionais</h1>
+	</header>
+	<div class="conteiner-text">
+		<p>Para aprender mais sobre Git, confira os seguintes recursos:</p>
+		<ul>
+			<li><a href="https://git-scm.com/" target="_blank">Git - Site oficial</a></li>
+			<li><a href="https://git-scm.com/book/pt-br/v2" target="_blank" >Git - Manual</a></li>
+			<li><a href="https://learngitbranching.js.org/" target="_blank">Tutorial Interativo</a></li>
+        </ul>
+    </div><br><br>
+
+    <footer>
+        <p>&copy; 2023 TechDuo. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                nav.classList.add('fixed');
+            } else {
+                nav.classList.remove('fixed');
+            }
+        });
+
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach((link) => {
+            link.addEventListener('mouseover', () => {
+                link.classList.add('hover');
+            });
+            link.addEventListener('mouseout', () => {
+                link.classList.remove('hover');
+            });
+        });
+
+        let imgFilmes = ["https://www.cloudmotion.com.br/blog/2019/04/02/Tipos-de-Sistemas-de-Controle-de-Versao/descentralizado.png", "https://blog.pronus.io/images/controle_versao/conceitos_basicos/repositorio_desenvolvedor.png", "https://as2.ftcdn.net/v2/jpg/05/45/57/73/1000_F_545577317_MZoby2KUVnJ5Gwkgs3MX0WAFP8YiKpjD.jpg", "https://i.pinimg.com/originals/48/c6/1f/48c61f19bf4c11a128533fd44d803809.jpg", "https://happygitwithr.com/img/fork-them-pull-request.jpeg"];
+        let nomesFilmes = ["Controle de Versão", "Sistema distribuído", "Repositórios", "GitHub", "Forks e Pull Requests:"];
+        let Descricao = ["O Git é uma ferramenta de controle de versão que permite que você rastreie todas as alterações feitas em um projeto ao longo do tempo. Ele mantém um histórico completo das versões anteriores do código, o que facilita a recuperação de versões anteriores e a compreensão das mudanças feitas por você e outros colaboradores.",
+    "O Git é um sistema de controle de versão distribuído, o que significa que cada usuário de um projeto Git possui uma cópia completa do repositório, incluindo todo o histórico. Isso permite que os desenvolvedores trabalhem de forma descentralizada e colaborem efetivamente em projetos, mesmo em locais diferentes.",
+"Um repositório Git é um local onde você armazena seu código e todo o histórico de versões. Existem repositórios locais (em sua máquina) e repositórios remotos (em servidores), que facilitam a colaboração com outros desenvolvedores.",
+"Os repositórios remotos são versões do seu projeto armazenadas em servidores ou locais acessíveis por outros colaboradores. Plataformas como GitHub, GitLab e Bitbucket são amplamente utilizadas para hospedar repositórios remotos e facilitar a colaboração em equipe.",
+"Em ambientes colaborativos, os desenvolvedores frequentemente fazem forks (cópias) de repositórios remotos e propõem mudanças por meio de pull requests. Isso permite que outros revisem e discutam as alterações antes de mesclá-las no repositório original."]
+
+        let filmesContainer = document.getElementById("filmes");
+
+        for (let i = 0; i < imgFilmes.length; i++) {
+            let div = document.createElement("div");
+            div.classList.add("itens");
+
+            let img = document.createElement("img");
+            img.classList.add("poster");
+            img.src = imgFilmes[i];
+
+            let h2 = document.createElement("h2");
+            h2.classList.add("nomes");
+            h2.innerText = nomesFilmes[i];
+
+            let p = document.createElement("p");
+            p.classList.add("descritivo");
+            p.innerText = Descricao[i];
+
+            div.appendChild(img);
+            div.appendChild(h2);
+            div.appendChild(p);
+
+            filmesContainer.appendChild(div);
+        }
+    </script>
+</body>
+
+</html>
